@@ -86,7 +86,7 @@ def write_to_sheet(rows):
     sheet = client.open_by_key(SHEET_ID).worksheet("الورقة1")
     print(f"اتصل بالشيت بنجاح")
     for row in rows:
-        sheet.append_row([print(f"كتب: {row['ticker']}")
+    sheet.append_row([print(f"كتب: {row['ticker']}")
             row["date"],
             row["ticker"],
             row["source"],
