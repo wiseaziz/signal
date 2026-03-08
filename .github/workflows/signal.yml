@@ -12,7 +12,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests gspread google-auth
-      - run: python signal.py
+      - run: python run_signal.py
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
