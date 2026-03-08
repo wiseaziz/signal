@@ -84,9 +84,9 @@ def write_to_sheet(rows):
     )
     client = gspread.authorize(creds)
     sheet = client.open_by_key(SHEET_ID).worksheet("الورقة1")
-
+    print(f"اتصل بالشيت بنجاح")
     for row in rows:
-        sheet.append_row([
+        sheet.append_row([print(f"كتب: {row['ticker']}")
             row["date"],
             row["ticker"],
             row["source"],
