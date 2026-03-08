@@ -42,7 +42,9 @@ def analyze_with_claude(title, description):
 التفاصيل: {description or ''}
 
 أجب بهذا الشكل الدقيق فقط، ابدأ بـ {{ وانتهِ بـ }}:
-{{"triggered": true, "urgency": "HIGH", "summary": "ملخص الخبر بالعربية في جملة واحدة", "action": "STRONG SIGNAL"}}
+{{"triggered": true, "urgency": "HIGH", "summary": "اكتب الملخص هنا بالعربية فقط", "action": "STRONG SIGNAL"}}
+
+مهم: اكتب قيمة summary باللغة العربية فقط.
 
 قيم urgency: HIGH أو MEDIUM أو LOW
 قيم action: STRONG SIGNAL أو WATCH
